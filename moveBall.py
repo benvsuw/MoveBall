@@ -15,11 +15,11 @@ def main():
 	pygame.init()
 	FPSCLOCK = pygame.time.Clock()
 	DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
-	DISPLAYSURF.fill(BGCOLOR) # bgcolor
+	DISPLAYSURF.fill(BGCOLOR) 
 
 	ball = Ball()
 	while True:
-		DISPLAYSURF.fill((50,0,50)) # bgcolor
+		DISPLAYSURF.fill(BGCOLOR) 
 		ball.update()		
 		pygame.display.update()
 		pygame.time.wait(10)
